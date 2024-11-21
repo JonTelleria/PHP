@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Azalera Kalkulatzailea</title>
+</head>
+<body>
+    <h1>Geometria Azalera Kalkulatzailea</h1>
+    <form method="post" action="/ariketak/PHP/azalerak/azalera.php">
+        <label for="irudia">Aukeratu irudi geometrikoa:</label>
+        <select name="irudia" id="irudia" required>
+            <option value="karratua">Karratua</option>
+            <option value="triangelua">Triangelua</option>
+            <option value="zirkulua">Zirkulua</option>
+        </select>             
+        <br>
+
+        <label for="aldea">Sartu aldea (karratu/triangulorako) edo erradioa (zirkulorako):</label>
+        <input type="number" name="aldea" id="aldea" required>
+        <br>
+
+        <input type="submit" value="Kalkulatu">
+    </form>
+</body>
+</html>

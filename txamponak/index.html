@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, content="width=device-width, initial-scale=1.0">
+    <title>Txanponen Balioa Kalkulatzailea</title>
+</head>
+<body>
+    <h1>Euroak Txanponetara Bihurtu</h1>
+    <form method="post" action="/ariketak/PHP/txamponak/txamponak.php">
+        <label for="euros">Sartu euro kopurua:</label>
+        <input type="number" name="euros" id="euros" required>
+        <br>
+
+        <label for="moneta">Aukeratu txanpona:</label>
+        <select name="moneta" id="moneta" required>
+            <option value="dolar_amerikano">Dolar amerikarra</option>
+            <option value="libra_britaniar">Libra britaniar</option>
+            <option value="yen_japoniar">Yen japoniar</option>
+            <option value="franko_suitzar">Franko suitzar</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Bihurtu">
+    </form>
+</body>
+</html>

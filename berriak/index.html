@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berri bat Gehitu</title>
+</head>
+<body>
+    <h1>Berri bat gehitu</h1>
+    <form method="post" action="/ariketak/PHP/berriak/berriak.php" enctype="multipart/form-data">
+        <label for="izenburua">Izenburua:</label>
+        <input type="text" name="izenburua" id="izenburua" required>
+        <br>
+        
+        <label for="testua">Testua:</label>
+        <textarea name="testua" id="testua" required></textarea>
+        <br>
+        
+        <label for="mota">Mota:</label>
+        <select name="mota" id="mota" required>
+            <option value="Eskaintzak">Eskaintzak</option>
+            <option value="Proposamenak">Proposamenak</option>
+        </select>
+        <br>
+        
+        <label for="irudia">Irudia:</label>
+        <input type="file" name="irudia" id="irudia" accept="image/*">
+        <br>
+        
+        <input type="submit" value="Bidali">
+    </form>
+</body>
+</html>
